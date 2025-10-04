@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포미서비스 - AI SNS 마케팅 솔루션</title>
+    <meta name="description" content="AI 기반 SNS 마케팅으로 브랜드 성장을 이끌어보세요. 포미서비스와 함께 더 스마트한 마케팅을 시작하세요.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-pretendard">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-primary-dark">포미서비스</div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#hero" class="nav-link text-dark hover:text-primary px-3 py-2 rounded-md text-sm font-medium">홈</a>
+                        <a href="#services" class="nav-link text-dark hover:text-primary px-3 py-2 rounded-md text-sm font-medium">서비스</a>
+                        <a href="#features" class="nav-link text-dark hover:text-primary px-3 py-2 rounded-md text-sm font-medium">기능</a>
+                        <a href="#pricing" class="nav-link text-dark hover:text-primary px-3 py-2 rounded-md text-sm font-medium">가격</a>
+                        <a href="#contact" class="nav-link text-dark hover:text-primary px-3 py-2 rounded-md text-sm font-medium">상담</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-dark hover:text-primary">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#hero" class="nav-link block px-3 py-2 text-dark hover:text-primary">홈</a>
+                <a href="#services" class="nav-link block px-3 py-2 text-dark hover:text-primary">서비스</a>
+                <a href="#features" class="nav-link block px-3 py-2 text-dark hover:text-primary">기능</a>
+                <a href="#pricing" class="nav-link block px-3 py-2 text-dark hover:text-primary">가격</a>
+                <a href="#contact" class="nav-link block px-3 py-2 text-dark hover:text-primary">상담</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-16 min-h-screen flex items-center bg-gradient-to-br from-light to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-dark mb-6 fade-in">
+                    AI로 만드는<br>
+                    <span class="text-primary">스마트한 SNS 마케팅</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto fade-in">
+                    포미서비스의 AI 기술로 브랜드 인지도를 높이고, 
+                    고객과의 소통을 더욱 효과적으로 만들어보세요.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in">
+                    <button class="btn-primary bg-accent hover:bg-accent/90 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all">
+                        무료 상담 신청
+                    </button>
+                    <button class="btn-secondary border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all">
+                        서비스 둘러보기
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Introduction -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
+                    왜 포미서비스인가요?
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    AI 기술과 마케팅 전문성을 결합한 혁신적인 솔루션
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="service-card bg-light p-8 rounded-xl text-center hover:shadow-lg transition-all">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">빠른 성과</h3>
+                    <p class="text-gray-600">
+                        AI 알고리즘이 최적의 마케팅 전략을 분석하여 
+                        빠른 시간 내에 눈에 띄는 성과를 만들어냅니다.
+                    </p>
+                </div>
+                
+                <div class="service-card bg-light p-8 rounded-xl text-center hover:shadow-lg transition-all">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">정확한 타겟팅</h3>
+                    <p class="text-gray-600">
+                        고객 데이터 분석을 통해 정확한 타겟 고객을 찾아 
+                        효율적인 마케팅 캠페인을 진행합니다.
+                    </p>
+                </div>
+                
+                <div class="service-card bg-light p-8 rounded-xl text-center hover:shadow-lg transition-all">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">비용 효율성</h3>
+                    <p class="text-gray-600">
+                        전통적인 마케팅 대비 최대 70% 비용 절감 효과를 
+                        제공하며 투자 대비 높은 수익률을 보장합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    AI 기반 핵심 기능
+                </h2>
+                <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+                    최첨단 AI 기술로 구현된 4가지 핵심 마케팅 기능
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="feature-card text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">콘텐츠 생성</h3>
+                    <p class="text-gray-300">
+                        AI가 브랜드 톤앤매너에 맞는 
+                        고품질 콘텐츠를 자동으로 생성
+                    </p>
+                </div>
+                
+                <div class="feature-card text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">고객 분석</h3>
+                    <p class="text-gray-300">
+                        빅데이터 분석으로 고객 행동 패턴을 
+                        파악하고 맞춤형 마케팅 전략 수립
+                    </p>
+                </div>
+                
+                <div class="feature-card text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">최적화된 타이밍</h3>
+                    <p class="text-gray-300">
+                        고객 활동 패턴을 분석하여 
+                        최적의 게시 시간을 자동으로 추천
+                    </p>
+                </div>
+                
+                <div class="feature-card text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">성과 추적</h3>
+                    <p class="text-gray-300">
+                        실시간 성과 분석과 리포트를 통해 
+                        마케팅 ROI를 명확하게 측정
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
+                    경쟁력 있는 가격
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    기존 업체 대비 최대 70% 비용 절감 효과
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <!-- 기존 업체 -->
+                <div class="pricing-card bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-600 mb-4">기존 업체</h3>
+                        <div class="text-4xl font-bold text-gray-400 mb-2">월 500만원+</div>
+                        <p class="text-gray-500">고정 비용 + 추가 비용</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-red-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                            수동 콘텐츠 제작
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-red-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                            제한적인 분석 도구
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-red-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                            느린 결과 도출
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-red-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                            높은 운영 비용
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- 포미서비스 -->
+                <div class="pricing-card bg-gradient-to-br from-primary-dark to-primary p-8 rounded-xl shadow-lg text-white relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-accent text-white px-4 py-2 rounded-full text-sm font-semibold">추천</span>
+                    </div>
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold mb-4">포미서비스</h3>
+                        <div class="text-4xl font-bold mb-2">월 150만원</div>
+                        <p class="text-blue-100">모든 기능 포함</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            AI 자동 콘텐츠 생성
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            고급 분석 및 인사이트
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            빠른 결과 도출
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            투명한 비용 구조
+                        </li>
+                    </ul>
+                    <button class="w-full bg-accent hover:bg-accent/90 text-white py-3 rounded-lg font-semibold transition-all">
+                        지금 시작하기
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
+                    간단한 4단계 프로세스
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    복잡한 마케팅은 이제 그만, 포미서비스와 함께 시작하세요
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="process-step text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 relative">
+                        <span class="text-white font-bold text-xl">1</span>
+                        <div class="hidden md:block absolute -right-8 top-1/2 transform -translate-y-1/2 w-16 h-0.5 bg-gray-300"></div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">상담 및 분석</h3>
+                    <p class="text-gray-600">
+                        브랜드 현황과 목표를 파악하여 
+                        맞춤형 마케팅 전략을 수립합니다.
+                    </p>
+                </div>
+                
+                <div class="process-step text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 relative">
+                        <span class="text-white font-bold text-xl">2</span>
+                        <div class="hidden md:block absolute -right-8 top-1/2 transform -translate-y-1/2 w-16 h-0.5 bg-gray-300"></div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">AI 설정</h3>
+                    <p class="text-gray-600">
+                        브랜드 톤앤매너와 타겟 고객을 
+                        AI 시스템에 학습시켜 최적화합니다.
+                    </p>
+                </div>
+                
+                <div class="process-step text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 relative">
+                        <span class="text-white font-bold text-xl">3</span>
+                        <div class="hidden md:block absolute -right-8 top-1/2 transform -translate-y-1/2 w-16 h-0.5 bg-gray-300"></div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">콘텐츠 생성</h3>
+                    <p class="text-gray-600">
+                        AI가 자동으로 고품질 콘텐츠를 생성하고 
+                        최적의 게시 시간에 업로드합니다.
+                    </p>
+                </div>
+                
+                <div class="process-step text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white font-bold text-xl">4</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">성과 분석</h3>
+                    <p class="text-gray-600">
+                        실시간 성과 분석과 개선점을 제공하여 
+                        지속적인 마케팅 최적화를 지원합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    고객 후기
+                </h2>
+                <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+                    포미서비스를 이용한 고객들의 실제 경험담
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-white/10 p-8 rounded-xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">김</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">김민수 대표</h4>
+                            <p class="text-gray-300 text-sm">패션 브랜드</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">
+                        "포미서비스 덕분에 마케팅 비용을 60% 절감하면서도 
+                        브랜드 인지도가 3배나 올랐습니다. 정말 놀라운 결과입니다!"
+                    </p>
+                </div>
+                
+                <div class="testimonial-card bg-white/10 p-8 rounded-xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">이</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">이지현 팀장</h4>
+                            <p class="text-gray-300 text-sm">카페 프랜차이즈</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">
+                        "AI가 만든 콘텐츠가 정말 자연스럽고 브랜드에 잘 맞아요. 
+                        이제 마케팅에 시간을 덜 쓰고 다른 업무에 집중할 수 있어요."
+                    </p>
+                </div>
+                
+                <div class="testimonial-card bg-white/10 p-8 rounded-xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">박</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">박성호 이사</h4>
+                            <p class="text-gray-300 text-sm">IT 스타트업</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">
+                        "실시간 성과 분석이 정말 정확해요. 
+                        어떤 콘텐츠가 효과적인지 바로 알 수 있어서 
+                        마케팅 전략 수정이 훨씬 쉬워졌습니다."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-20 bg-gradient-to-r from-primary-dark to-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                지금 바로 시작하세요!
+            </h2>
+            <p class="text-xl mb-8 text-blue-100">
+                무료 상담을 통해 귀하의 브랜드에 맞는 맞춤형 마케팅 전략을 제안해드립니다.
+            </p>
+            
+            <form id="contact-form" class="max-w-md mx-auto">
+                <div class="grid md:grid-cols-2 gap-4 mb-6">
+                    <input type="text" id="name" name="name" placeholder="이름" required 
+                           class="w-full px-4 py-3 rounded-lg text-dark focus:outline-none focus:ring-2 focus:ring-accent">
+                    <input type="tel" id="phone" name="phone" placeholder="연락처" required 
+                           class="w-full px-4 py-3 rounded-lg text-dark focus:outline-none focus:ring-2 focus:ring-accent">
+                </div>
+                <div class="mb-6">
+                    <input type="email" id="email" name="email" placeholder="이메일" required 
+                           class="w-full px-4 py-3 rounded-lg text-dark focus:outline-none focus:ring-2 focus:ring-accent">
+                </div>
+                <div class="mb-6">
+                    <select id="service" name="service" required 
+                            class="w-full px-4 py-3 rounded-lg text-dark focus:outline-none focus:ring-2 focus:ring-accent">
+                        <option value="">관심 서비스를 선택해주세요</option>
+                        <option value="sns-marketing">SNS 마케팅</option>
+                        <option value="content-creation">콘텐츠 제작</option>
+                        <option value="analysis">성과 분석</option>
+                        <option value="consulting">마케팅 컨설팅</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <textarea id="message" name="message" placeholder="문의사항을 입력해주세요" rows="4" 
+                              class="w-full px-4 py-3 rounded-lg text-dark focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
+                </div>
+                <button type="submit" 
+                        class="w-full bg-accent hover:bg-accent/90 text-white py-4 rounded-lg text-lg font-semibold transition-all">
+                    무료 상담 신청하기
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold mb-4">포미서비스</div>
+                    <p class="text-gray-300 mb-4">
+                        AI 기술로 만드는 스마트한 SNS 마케팅 솔루션
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-4">서비스</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-primary">SNS 마케팅</a></li>
+                        <li><a href="#" class="hover:text-primary">콘텐츠 제작</a></li>
+                        <li><a href="#" class="hover:text-primary">성과 분석</a></li>
+                        <li><a href="#" class="hover:text-primary">컨설팅</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-4">회사</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-primary">회사 소개</a></li>
+                        <li><a href="#" class="hover:text-primary">팀</a></li>
+                        <li><a href="#" class="hover:text-primary">채용</a></li>
+                        <li><a href="#" class="hover:text-primary">뉴스</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-4">연락처</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>📞 02-1234-5678</li>
+                        <li>✉️ contact@formiservice.com</li>
+                        <li>📍 서울시 강남구 테헤란로 123</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 포미서비스. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
